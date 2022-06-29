@@ -16,11 +16,11 @@ spec:
       localityLbSetting:
         enabled: true
         distribute:
-        - from: region1/az2/*
+        - from: region1/az211111111/*
           to:
-            "region1/az2/*": 100
-            "region1/az1/*": 0
+            "region1/az2/*": 99
+            "region1/az1/*": 1
         - from: region1/az1/*
           to:
-            "region/az2/*": 100
-            "region/az1/*": 0
+            "region/az2/*": 99
+            "region/az1/*": 1
