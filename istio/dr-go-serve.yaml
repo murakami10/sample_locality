@@ -1,19 +1,19 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
-  name: go-serve-dr
+  name: go-serve
 spec:
   host: go-serve.default.svc.cluster.local
-  trafficPolicy:
-    loadBalancer:
-      localityLbSetting:
-        enabled: true
-        distribute:
-        - from: ap-northeast/az2
-          to:
-            "ap-northeast/az2/*": 90
-            "ap-northeast/az1/*": 10
-    outlierDetection:
-      consecutive5xxErrors: 100
-      interval: 1s
-      baseEjectionTime: 1m
+#  trafficPolicy:
+#    loadBalancer:
+#      localityLbSetting:
+#        enabled: true
+#        distribute:
+#        - from: ap-northeast/az2
+#          to:
+#            "ap-northeast/az2/*": 90
+#            "ap-northeast/az1/*": 10
+#    outlierDetection:
+#      consecutive5xxErrors: 100
+#      interval: 1s
+#      baseEjectionTime: 1m
