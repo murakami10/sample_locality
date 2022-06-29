@@ -9,7 +9,7 @@ spec:
       localityLbSetting:
         enabled: true
         distribute:
-        - from: ap-northeast/*/*
+        - from: ap-northeast/az2/sub2
           to:
             "ap-northeast/az2/*" : 90
             "ap-northeast/az1/*" : 10
