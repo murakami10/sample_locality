@@ -4,19 +4,26 @@ metadata:
   name: go-serve
 spec:
   host: go-serve.default.svc.cluster.local
-  trafficPolicy:
-    loadBalancer:
-      localityLbSetting:
-        enabled: true
-        distribute:
-        - from: ap-northeast/az2*
-          to:
-            "ap-northeast/az2/*": 90
-            "ap-northeast/az1/*": 10
-        - from: ap-northeast/az1/*
-          to:
-            "ap-northeast/az2/*": 90
-            "ap-northeast/az1/*": 10
+  subsets:
+  - labels:
+      version: v1
+    name: subset-v1
+  - labels:
+      verson: v2
+    name: subset-v2
+#  trafficPolicy:
+#    loadBalancer:
+#      localityLbSetting:
+#        enabled: true
+#        distribute:
+#        - from: ap-northeast/az2*
+#          to:
+#            "ap-northeast/az2/*": 90
+#            "ap-northeast/az1/*": 10
+#        - from: ap-northeast/az1/*
+#          to:
+#            "ap-northeast/az2/*": 90
+#            "ap-northeast/az1/*": 10
 #    outlierDetection:
 #      consecutive5xxErrors: 100
 #      interval: 1s
