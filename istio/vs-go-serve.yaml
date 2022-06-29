@@ -8,4 +8,4 @@ spec:
   http:
     - route:
         - destination:
-            host: go-serve
+            host: go-serve-dr
