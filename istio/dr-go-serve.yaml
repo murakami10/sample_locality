@@ -15,13 +15,13 @@ spec:
     loadBalancer:
       localityLbSetting:
         enabled: true
-#        distribute:
-#        - from: ap-northeast/az2/*
-#          to:
-#            "ap-northeast/az2/*": 99
-#            "ap-northeast/az1/*": 1
-#        - from: ap-northeast/az1/*
-#          to:
-#            "ap-northeast/az2/*": 99
-#            "ap-northeast/az1/*": 1
+        distribute:
+        - from: ap-northeast/az2/*
+          to:
+            ap-northeast/az2/* : 99
+            ap-northeast/az1/* : 1
+        - from: ap-northeast/az1/*
+          to:
+            ap-northeast/az2/* : 99
+            ap-northeast/az1/* : 1
       simple: ROUND_ROBIN
