@@ -4,7 +4,7 @@ metadata:
   name: go-serve-vs
 spec:
   hosts:
-    - go-serve
+    - go-serve-vs
   http:
     - route:
         - destination:
