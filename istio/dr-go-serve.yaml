@@ -18,12 +18,12 @@ spec:
         distribute:
         - from: ap-northeast/az2/*
           to:
-            ap-northeast/az2/* : 99
-            ap-northeast/az1/* : 1
+            "ap-northeast/az2/*" : 90
+            "ap-northeast/az1/*" : 10
         - from: ap-northeast/az1/*
           to:
-            ap-northeast/az2/* : 99
-            ap-northeast/az1/* : 1
+            "ap-northeast/az2/*" : 90
+            "ap-northeast/az1/*" : 10
       simple: ROUND_ROBIN
     outlierDetection:
       consecutive5xxErrors: 100
