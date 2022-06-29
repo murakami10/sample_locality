@@ -5,6 +5,8 @@ metadata:
 spec:
   host: go-serve
   trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
     loadBalancer:
       simple: RANDOM
       localityLbSetting:
