@@ -3,7 +3,7 @@ kind: DestinationRule
 metadata:
   name: go-serve-dr
 spec:
-  host: go-serve
+  host: go-serve.default.svc.cluster.local
 #  trafficPolicy:
 #    loadBalancer:
 #      localityLbSetting:
