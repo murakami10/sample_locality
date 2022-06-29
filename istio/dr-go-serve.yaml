@@ -18,9 +18,9 @@ spec:
         distribute:
         - from: region1/az2/*
           to:
-            "region1/az2/*": 90
-            "region1/az1/*": 10
+            "region1/az2/*": 100
+            "region1/az1/*": 0
         - from: region1/az1/*
           to:
-            "region/az2/*": 90
-            "region/az1/*": 10
+            "region/az2/*": 100
+            "region/az1/*": 0
