@@ -3,7 +3,7 @@ kind: DestinationRule
 metadata:
   name: go-serve
 spec:
-  host: go-serve.default.svc.cluster.local
+  host: go-serve
   subsets:
   - labels:
       version: v1
