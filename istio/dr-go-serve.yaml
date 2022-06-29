@@ -5,11 +5,11 @@ metadata:
 spec:
   host: go-serve
   subsets:
-#  - labels:
-#      version: v1
-#    name: subset-v1
   - labels:
-      verson: v2
+      version: v1
+    name: subset-v1
+  - labels:
+      version: v2
     name: subset-v2
 #  trafficPolicy:
 #    loadBalancer:
