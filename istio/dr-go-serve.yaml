@@ -14,7 +14,7 @@ spec:
   trafficPolicy:
     loadBalancer:
       localityLbSetting:
-        enabled: true
+#        enabled: true
         distribute:
         - from: ap-northeast/az2/*
           to:
@@ -26,6 +26,6 @@ spec:
 #            "ap-northeast/az1/*" : 10
 #      simple: ROUND_ROBIN
     outlierDetection:
-      consecutive5xxErrors: 200
-      interval: 2s
+      consecutive5xxErrors: 100
+      interval: 1s
       baseEjectionTime: 3m
