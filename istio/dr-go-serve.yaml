@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
-  name: go-serve-dr
+  name: go-serve
 spec:
   host: go-serve.default.svc.cluster.local
   trafficPolicy:
