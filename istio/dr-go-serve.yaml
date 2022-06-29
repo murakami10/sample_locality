@@ -9,9 +9,9 @@ spec:
       localityLbSetting:
         enabled: true
         distribute:
-        - from: *
+        - from: ap-northeast
           to:
-            "ap-northeast/az2/*" : 90
+            "ap-northeast/az2/*" : aa
             "ap-northeast/az1/*" : 10
     outlierDetection:
       consecutive5xxErrors: 100
