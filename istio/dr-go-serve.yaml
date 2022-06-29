@@ -26,6 +26,6 @@ spec:
 #            "ap-northeast/az1/*" : 10
 #      simple: ROUND_ROBIN
     outlierDetection:
-      consecutive5xxErrors: 100
+      consecutive5xxErrors: 200
       interval: 2s
       baseEjectionTime: 3m
