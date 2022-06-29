@@ -7,10 +7,10 @@ spec:
   subsets:
     name: subset-v1
     trafficPolicy:
-     loadBalancer:
-       simple: RANDOM
-       localityLbSetting:
-         enabled: true
+      loadBalancer:
+        simple: RANDOM
+        localityLbSetting:
+          enabled: true
 #        distribute:
 #        - from: ap-northeast/az2/*
 #          to:
