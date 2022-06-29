@@ -11,8 +11,8 @@ spec:
         distribute:
         - from: ap-northeast
           to:
-            "ap-northeast/az2/*/1" : 90
-            "ap-northeast/az1/*" : 10
+            "ap-northeast/az2/*/1" : 0
+            "ap-northeast/az1/*" : 0
     outlierDetection:
       consecutive5xxErrors: 100
       interval: 1s
