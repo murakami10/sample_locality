@@ -16,11 +16,11 @@ spec:
       localityLbSetting:
         enabled: true
         distribute:
-        - from: ap-northeast/az2/*
+        - from: region1/az2/*
           to:
-            "ap-northeast/az2/*": 90
-            "ap-northeast/az1/*": 10
-        - from: ap-northeast/az1/*
+            "region1/az2/*": 90
+            "region1/az1/*": 10
+        - from: region1/az1/*
           to:
-            "ap-northeast/az2/*": 90
-            "ap-northeast/az1/*": 10
+            "region/az2/*": 90
+            "region/az1/*": 10
