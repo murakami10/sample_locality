@@ -5,7 +5,7 @@ metadata:
 spec:
   host: go-serve
   subsets:
-    name: subset-v1
+  - name: subset-v1
     trafficPolicy:
       loadBalancer:
         simple: RANDOM
@@ -20,7 +20,7 @@ spec:
 #          to:
 #            "ap-northeast/az2/*" : 90
 #            "ap-northeast/az1/*" : 10
-    outlierDetection:
+      outlierDetection:
       consecutive5xxErrors: 100
       interval: 1s
       baseEjectionTime: 3m
