@@ -15,11 +15,11 @@ spec:
     loadBalancer:
       localityLbSetting:
         enabled: true
-#        distribute:
-#        - from: ap-northeast/az2/*
-#          to:
-#            "ap-northeast/az2/*" : 90
-#            "ap-northeast/az1/*" : 10
+        distribute:
+        - from: ap-northeast/az2/*
+          to:
+            "ap-northeast/az2/*" : 90
+            "ap-northeast/az1/*" : 10
 #        - from: ap-northeast/az1/*
 #          to:
 #            "ap-northeast/az2/*" : 90
