@@ -21,6 +21,6 @@ spec:
 #            "ap-northeast/az2/*" : 90
 #            "ap-northeast/az1/*" : 10
       outlierDetection:
-      consecutive5xxErrors: 100
-      interval: 1s
-      baseEjectionTime: 3m
+        consecutive5xxErrors: 100
+        interval: 1s
+        baseEjectionTime: 3m
