@@ -12,9 +12,9 @@ spec:
       version: v2
     name: subset-v2
   trafficPolicy:
-#    loadBalancer:
-#      localityLbSetting:
-#        enabled: true
+    loadBalancer:
+      localityLbSetting:
+        enabled: true
 #        distribute:
 #        - from: ap-northeast/az2/*
 #          to:
