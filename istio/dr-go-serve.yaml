@@ -6,15 +6,10 @@ spec:
   host: go-serve
   trafficPolicy:
     loadBalancer:
-      simple: RANDOM
       localityLbSetting:
         enabled: true
         distribute:
-        - from: ap-northeast/az2/*
-          to:
-            "ap-northeast/az2/*" : 90
-            "ap-northeast/az1/*" : 10
-        - from: ap-northeast/az1/*
+        - from: */*/*
           to:
             "ap-northeast/az2/*" : 90
             "ap-northeast/az1/*" : 10
