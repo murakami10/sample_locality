@@ -11,7 +11,7 @@ spec:
   - labels:
       version: v2
     name: subset-v2
-#  trafficPolicy:
+  trafficPolicy:
 #    loadBalancer:
 #      localityLbSetting:
 #        enabled: true
