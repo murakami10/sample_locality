@@ -6,7 +6,7 @@ spec:
   host: go-serve
   trafficPolicy:
     loadBalancer:
-      simple: RANDOMddddddddd
+      simple: LEAST_CONN
       localityLbSetting:
         enabled: true
         distribute:
