@@ -13,18 +13,18 @@ spec:
     name: subset-v2
   trafficPolicy:
     loadBalancer:
+      simple: ROUND_ROBIN
       localityLbSetting:
-#        enabled: true
-        distribute:
-        - from: ap-northeast/az2/*
-          to:
-            "ap-northeast/az2/*" : 90
-            "ap-northeast/az1/*" : 10
+        enabled: true
+#        distribute:
+#        - from: ap-northeast/az2/*
+#          to:
+#            "ap-northeast/az2/*" : 90
+#            "ap-northeast/az1/*" : 10
 #        - from: ap-northeast/az1/*
 #          to:
 #            "ap-northeast/az2/*" : 90
 #            "ap-northeast/az1/*" : 10
-#      simple: ROUND_ROBIN
     outlierDetection:
       consecutive5xxErrors: 100
       interval: 1s
