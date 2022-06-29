@@ -9,4 +9,3 @@ spec:
     - route:
         - destination:
             host: go-serve
-            subset: subset-v1
