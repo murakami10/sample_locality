@@ -13,7 +13,7 @@ spec:
         app: curl
     spec:
       containers:
-      - image: redis
+      - image: curlimages/curl
         name: curl
       nodeSelector:
         kubernetes.io/hostname: istio4
