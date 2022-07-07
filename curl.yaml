@@ -16,4 +16,4 @@ spec:
       - image: redis
         name: curl
       nodeSelector:
-        kubernetes.io/hostname=istio4
+        kubernetes.io/hostname: istio4
