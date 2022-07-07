@@ -9,3 +9,9 @@ spec:
     - route:
         - destination:
             host: go-serve
+            subset: subset-v1
+          weight: 90
+        - destionation:
+            host: go-serve
+            subset: subset-v2
+          weight: 10

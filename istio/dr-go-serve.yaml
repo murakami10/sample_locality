@@ -4,16 +4,10 @@ metadata:
   name: go-serve
 spec:
   host: go-serve
-  trafficPolicy:
-    loadBalancer:
-      localityLbSetting:
-        enabled: true
-        distribute:
-        - from: ap-northeast
-          to:
-            "ap-northeast/az2/*/1" : 1
-            "ap-northeast/az1/*" : 1
-    outlierDetection:
-      consecutive5xxErrors: 100
-      interval: 1s
-      baseEjectionTime: 3m
+  subsets:
+    - labels:
+        version: v1
+      name: subset-v1
+    - labels:
+        version: v2
+      name: subset-v2
