@@ -16,4 +16,4 @@ spec:
       - image: redis
         name: curl
       nodeSelector:
-        topology.kubernetes.io/zone: az2
+        kubernetes.io/hostname=istio4

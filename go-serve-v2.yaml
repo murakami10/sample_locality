@@ -20,4 +20,4 @@ spec:
         ports:
         - containerPort: 80
       nodeSelector:
-        topology.kubernetes.io/zone: az2
+        topology.kubernetes.io/zone: kubernetes.io/hostname=istio3
