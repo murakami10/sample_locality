@@ -4,8 +4,21 @@ metadata:
   name: go-serve-vs
 spec:
   hosts:
-    - go-serve
+    - go-serve-vs
   http:
+    - match:
+        - headers:
+            end-user:
+              exact: jason
+      route:
+        - destination:
+            host: go-serve-v2
+            subset: subset-v1
+          weight: 20
+        - destination:
+            host: go-serve-v2
+            subset: subset-v2
+          weight: 80
     - route:
         - destination:
             host: go-serve

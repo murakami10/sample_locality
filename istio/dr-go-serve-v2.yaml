@@ -1,0 +1,13 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: go-serve-v2
+spec:
+  host: go-serve-v2
+  subsets:
+    - labels:
+        version: v1
+      name: subset-v1
+    - labels:
+        version: v2
+      name: subset-v2
